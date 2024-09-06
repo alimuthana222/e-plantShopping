@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProductList from './ProductList';
-import './App.css';
+import './App2.css';
 import AboutUs from './AboutUs';
 
 function App() {
