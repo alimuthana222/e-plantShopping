@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProductList from './ProductList';
-import './App.css';
+import './App.css'; // تأكد من استخدام CSS الصحيح
 import AboutUs from './AboutUs';
 
 function App() {
@@ -14,27 +14,22 @@ function App() {
     <div className="app-container">
       <div className={`landing-page ${showProductList ? 'fade-out' : ''}`}>
         <div className="background-image"></div>
-        <div className="container text-center content">
-          <div className="row justify-content-center">
-            <div className="col-12 col-md-10 col-lg-8">
-              <h1 className="display-4">Welcome To Paradise Nursery</h1>
-              <p className="lead">Where Green Meets Serenity</p>
-              <button
-                className="btn btn-success btn-lg mt-3"
-                onClick={handleGetStartedClick}
-              >
-                Get Started
-              </button>
-            </div>
+        <div className="content">
+          <div className="landing_content">
+            <h1>Welcome To Paradise Nursery</h1>
+            <p>Where Green Meets Serenity</p>
+            <button
+              className="get-started-button"
+              onClick={handleGetStartedClick}
+            >
+              Get Started
+            </button>
           </div>
-          <div className="row mt-5">
-            <div className="col-12">
-              <AboutUs />
-            </div>
+          <div className="aboutus_container">
+            <AboutUs />
           </div>
         </div>
       </div>
-
       <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
         <ProductList />
       </div>
