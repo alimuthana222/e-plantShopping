@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProductList from './ProductList';
-import './App2.css';
+import './App.css';
 import AboutUs from './AboutUs';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <div className="background-image"></div>
         <div className="container text-center content">
           <div className="row justify-content-center">
-            <div className="col-lg-8 col-md-10 col-sm-12">
+            <div className="col-12 col-md-10 col-lg-8">
               <h1 className="display-4">Welcome To Paradise Nursery</h1>
               <p className="lead">Where Green Meets Serenity</p>
               <button
