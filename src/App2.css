@@ -1,0 +1,62 @@
+/* App2.css */
+.app-container {
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.landing-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-image-path.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.content {
+  z-index: 1;
+}
+
+.divider {
+  width: 50%;
+  height: 4px;
+  background-color: #28a745;
+  margin: 20px auto;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.product-list-container {
+  display: none;
+  /* Add other styles as needed */
+}
+
+.product-list-container.visible {
+  display: block;
+}
