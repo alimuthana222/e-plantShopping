@@ -88,28 +88,28 @@
 
 /* تأكد من أن `.product-
 /* تحسين العرض على الشاشات الصغيرة */
+/* تحسين العرض على الشاشات الصغيرة */
 .product-list-container {
-  position: fixed; /* استخدام fixed بدلاً من absolute لتثبيت السلة */
-  top: 0; /* تأكد من أنها تبدأ من أعلى الصفحة */
+  position: fixed; /* استخدام fixed لتثبيت السلة بشكل صحيح */
+  top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
-  transition: transform 0.5s ease; /* استخدم transform بدلاً من top */
-  transform: translateY(100%); /* بداية من أسفل الصفحة */
+  transition: transform 0.5s ease;
+  transform: translateY(100%); /* تبدأ السلة من أسفل الصفحة */
   overflow-y: auto;
   z-index: 2;
   backdrop-filter: blur(5px);
 }
 
 .product-list-container.visible {
-  transform: translateY(0); /* إظهار السلة عند التنشيط */
+  transform: translateY(0); /* تظهر السلة عند التنشيط */
 }
 
 /* استعلامات الوسائط للشاشات الصغيرة */
 @media screen and (max-width: 768px) {
   .product-list-container {
-    /* تحقق من أن السلة تظهر بشكل صحيح على الشاشات الصغيرة */
     width: 100%;
     height: 100vh;
   }
@@ -117,12 +117,10 @@
 
 @media screen and (max-width: 480px) {
   .product-list-container {
-    /* قد تحتاج إلى تعديلات إضافية هنا */
     width: 100%;
     height: 100vh;
   }
 }
-
 
 /* استعلامات الوسائط للشاشات الصغيرة */
 @media screen and (max-width: 768px) {
